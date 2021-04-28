@@ -2,11 +2,15 @@ Das RB Pi Remote lab ist über eine SSH zugänglich und kann mit Hilfe der IP un
 e Verbindung mit dem Desktop des RB Pis. Da wir derzeit in der Erprobung sind, kann der RB Pi nur über das Uni Netzwerk erreicht werden.
 
 1. Installation X2Go
-
+http://wiki.x2go.org/doku.php/download:start
 2. Zugang VPN zum Uninetzwerk
+https://www.urz.ovgu.de/vpn-path-204,616.html
 
 3. Zugriff auf den Pi
 User: pi-test
+IP : 10.48.11.6
+Passwort : t%%1de”Bb5
+
 4. Testfoto
 
 5. Zugang zum Schülatech Labor
