@@ -11,7 +11,12 @@ User: pi-test
 IP : 10.48.11.6
 Passwort : t%%1de”Bb5
 
-4. Testfoto
+4: Einrichten X2Go
+Anklicken: SSH Key automatisch 
+
+Desktop: Custom Desktop startlxde-pi
+
+5. Testfoto
 Terminal öffnen
 Cmd: raspistill -o Desktop/image.jpg
 
