@@ -12,5 +12,9 @@ IP : 10.48.11.6
 Passwort : t%%1de”Bb5
 
 4. Testfoto
+Terminal öffnen
+Cmd: raspistill -o Desktop/image.jpg
+
+Xdg-open test.jpg
 
 5. Zugang zum Schülatech Labor
