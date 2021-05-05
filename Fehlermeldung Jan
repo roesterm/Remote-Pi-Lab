@@ -1,0 +1,20 @@
+pi-user3@raspberrypi:~/Humidity $ pip3 install Adafruit_DHT
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting Adafruit_DHT
+  Downloading https://www.piwheels.org/simple/adafruit-dht/Adafruit_DHT-1.4.0-cp37-cp37m-linux_armv7l.whl
+Installing collected packages: Adafruit-DHT
+Successfully installed Adafruit-DHT-1.4.0
+pi-user3@raspberrypi:~/Humidity $ python3 ~/humidity.py
+Traceback (most recent call last):
+  File "/home/pi-user3/humidity.py", line 7, in <module>
+    humidity, temperature = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)
+  File "/home/pi-user3/.local/lib/python3.7/site-packages/Adafruit_DHT/common.py", line 94, in read_retry
+    humidity, temperature = read(sensor, pin, platform)
+  File "/home/pi-user3/.local/lib/python3.7/site-packages/Adafruit_DHT/common.py", line 80, in read
+    platform = get_platform()
+  File "/home/pi-user3/.local/lib/python3.7/site-packages/Adafruit_DHT/common.py", line 60, in get_platform
+    from . import Beaglebone_Black
+  File "/home/pi-user3/.local/lib/python3.7/site-packages/Adafruit_DHT/Beaglebone_Black.py", line 24, in <module>
+    from . import Beaglebone_Black_Driver as driver
+ImportError: cannot import name 'Beaglebone_Black_Driver' from 'Adafruit_DHT' (/home/pi-user3/.local/lib/python3.7/site-packages/Adafruit_DHT/__init__.py)
+pi-user3@raspberrypi:~/Humidity $ 
