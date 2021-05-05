@@ -23,3 +23,8 @@ Cmd: raspistill -o Desktop/image.jpg
 Xdg-open test.jpg
 
 5. Zugang zum Schülatech Labor
+
+
+Temp Sensor: 
+
+7 LED: 
