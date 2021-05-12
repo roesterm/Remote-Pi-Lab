@@ -1,0 +1,45 @@
+Genereller Umgang mit Linuxbefehlen: https://www.raspberrypi.org/documentation/linux/usage/commands.md
+
++ Übersicht Cheatsheet: https://cheatography.com/davechild/cheat-sheets/linux-command-line/
+
+#Allgemeine Intro: 
+#Wechseln zum Root Verzeichnis in Linux:
+cd /
+#Wechseln zum Homverzeichnis 
+cd ~/
+#Darstellung der Ordnerstruktur im aktuellen Pfad des Terminals
+ls
+#um eine Datei/ einen Skript mit dem Nano schreibeditor direkt im Terminal zu öffnen 
+nano Dateiname.dateiendung
+
+#um eine Datei mit dem im Terminal integrierten Python Interpreter (Alleinstellungsmerkmal von Linux OS) zu starten, und damit das Spiel zu starten
+python3 datei.dateiendung
+
+#Identifikation von Python Games
+#Quelle: https://www.raspberrypi.org/documentation/usage/python-games/README.md
+#Ablageort: /usr/share/python_games
+#Dateiname: tetromino.py
+
+#Vorgehen: Um die Datein abzuändern, muss von der Schreibgeschützen Datei in /usr/share/python_games auf den Desktop kopiert werden.
+#Aus der Quelle Zeile 1 erfahren wir, dass cp der Befehl fürs Kopieren ist, wir kombinieren das mit Wissen aus Zeile 7, 9 und 15
+#Befehl im Terminal um Kopieren der Datei
+
+cp /usr/share/python_games/tetromino.py ~/Desktop
+
+#nun entweder wechseln zum Dateipfad ~/Desktop oder die Datei von irgendwo über den Dateipfad aufrufen
+#Variante 1 (Dateipfad erst wechseln: 
+cd ~/Desktop
+#Enter drücken und dann datei mit Nano editor öffnen
+nano tetromino.py
+
+#Variante 2 kompletten Pfad im Befehl angeben
+nano ~/Desktop/tetromino.py
+
+#Datei in Nano abspeichern (Strg + O, Strg. + X, oder gleich Strg. + X)
+#Spiel über den Python 3.7 Interpreter starten
+python3 tetromino.py
+
+#falls Verzeichnigs nicht gewechselt wurde:
+python3 ~/Desktop/tetromino.py
+
+
